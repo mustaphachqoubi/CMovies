@@ -1,0 +1,106 @@
+:root{
+    --primary-color: rgb(88, 88, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(243, 242, 241);
+}
+
+.navbar{
+    padding: 50px
+}
+
+.app__container{
+    text-align: center;
+    background-color: rgb(243, 242, 241);
+}
+
+.m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 50px;
+    padding: 30px;
+}
+
+span{
+    color: rgb(88, 88, 255);
+}
+
+.mimg{
+    width: 200px;
+    height: 300px;
+    border: 3px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.mimg:hover{
+    opacity: 0.6;
+}
+
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.movie{
+    padding: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.mTitle{
+    color: var(--primary-color)
+}
+
+.mYear{
+    color: gray;
+}
+
+.empty{
+    padding: 50px
+}
+
+.search{
+    padding: 5px 120px;
+    border: 2px solid var(--primary-color);
+    background: rgb(243, 242, 241);
+}
+
+.search, .btn-search:focus{
+    outline-color: var(--primary-color);
+}
+
+.btn-search{
+    padding: 5px 20px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    background: var(--primary-color);
+    color: rgb(243, 242, 241);
+}
+
+.error{
+    padding: 100px 50px;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .search{
+        padding: 5px 50px;
+    }
+}
